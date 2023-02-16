@@ -1,12 +1,19 @@
 import { useState } from 'react'
 import './App.css'
+import AnimationContainer from './components/container/AnimationContainer'
+import Header from './components/header/Header'
+import Main from './Layout/main'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <div className="App">
+      <Header/>
+      <Main>
 
+        <AnimationContainer/>
+
+      </Main>
     </div>
   )
 }
