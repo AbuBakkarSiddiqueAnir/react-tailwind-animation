@@ -1,5 +1,5 @@
 
-import Snowfall from './../../animation/Snowfall';
+import Snowfall from '../../animation/snowfall/Snowfall';
 
 type TypeName= {
 

@@ -1,7 +1,7 @@
 
 
 .container-main {
-    background:url('./assest/bg.jpg');
+    background:url('./asset/bg.jpg');
     background-size: cover;
     width: 100%;
     height:650px;
@@ -10,7 +10,7 @@
 }
 
 .snow {
-    background: url(./assest/snow.jpg);
+    background: url(./asset/snow.jpg);
     background-repeat: repeat;
     width: 100%;
     height: 650px;
