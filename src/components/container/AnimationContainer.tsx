@@ -1,6 +1,7 @@
 
-import Snowfall from '../../animation/snowfall/Snowfall';
+
 import MenuEffect from '../../animation/menu-effect/index'
+import './AnimationContainer.css'
 type TypeName= {
 
 };

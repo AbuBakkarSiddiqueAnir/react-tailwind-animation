@@ -3,4 +3,8 @@
 .animation-container {
     width:100%;
     height:auto;
+    padding-top:50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }

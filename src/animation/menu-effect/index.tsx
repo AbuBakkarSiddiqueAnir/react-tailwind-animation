@@ -1,31 +1,30 @@
 
 import React from 'react';
-import Link from 'next/link'
 import './style.scss'
 type indexProps = {
 
 };
 
-const index:React.FC<indexProps> = () => {
+const index: React.FC<indexProps> = () => {
 
     return (
         <ul>
-		<li>
-			<Link href="#">home</Link>
-		</li>
-		<li>
-			<Link href="#">about</Link>
-		</li>
-		<li>
-			<Link href="#">services</Link>
-		</li>
-		<li>
-			<Link href="#">team</Link>
-		</li>
-		<li>
-			<Link href="#">contact</Link>
-		</li>
-	</ul>
+            <li>
+                <a href="#">home</a>
+            </li>
+            <li>
+                <a href="#">about</a>
+            </li>
+            <li>
+                <a href="#">services</a>
+            </li>
+            <li>
+                <a href="#">team</a>
+            </li>
+            <li>
+                <a href="#">contact</a>
+            </li>
+        </ul>
     )
 }
 export default index;

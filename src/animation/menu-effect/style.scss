@@ -8,8 +8,6 @@ body {
 	font-family: $font-family_1;
 }
 ul {
-	margin: 0;
-	padding: 0;
 	display: flex;
 }
 li {
@@ -33,25 +31,16 @@ a {
 		width: 100%;
 		height: 100%;
 		opacity: 0;
-		transform: scaleY(2);
+		transform: scaleY(1.5);
 		transition: 0.5s;
 		border-top: 2px solid black;
 		border-bottom: 2px solid black;
+        border-radius: 4px;
 	}
-	&:hover {
-		&:before {
-			transform: scaleY(1.2);
-			opacity: 1;
-		}
-		&:after {
-			transform: scale(1);
-		}
-		color: $color_2;
-	}
-	&:after {
+    &:after {
 		content: "";
 		position: absolute;
-		top: 2px;
+		top: 0;
 		left: 0;
 		width: 100%;
 		height: 100%;
@@ -60,4 +49,18 @@ a {
 		transform: scale(0);
 		z-index: -1;
 	}
+	&:hover {
+
+		&:before {
+			transform: scaleY(1.2);
+			opacity: 1;
+		}
+		&:after {
+			transform: scale(1);
+            // z-index: 1;
+		}
+		color: $color_2;
+        z-index: 100;
+	}
+
 }
