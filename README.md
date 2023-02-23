@@ -1,2 +1,2 @@
-### react animation with css
+### react css animation
 
