@@ -1,66 +1,64 @@
 $color_1: #222;
 $color_2: white;
-$font-family_1: 'Raleway', Arial, sans-serif;
+$font-family_1: "Raleway", Arial, sans-serif;
 $background-color_1: #222;
 
 @import "https://fonts.googleapis.com/css?family=Raleway:400,500,800";
 body {
-	font-family: $font-family_1;
+  font-family: $font-family_1;
 }
 ul {
-	display: flex;
+  display: flex;
 }
 li {
-	list-style: none;
+  list-style: none;
 }
 a {
-	position: relative;
-	display: block;
-	padding: 15px 30px;
-	text-decoration: none;
-	text-transform: uppercase;
-	color: $color_1;
-	font-size: 22px;
-	font-weight: bold;
-	transition: 0.5s;
-	&:before {
-		content: "";
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		opacity: 0;
-		transform: scaleY(1.5);
-		transition: 0.5s;
-		border-top: 2px solid black;
-		border-bottom: 2px solid black;
-        border-radius: 4px;
-	}
+  position: relative;
+  display: block;
+  padding: 15px 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $color_1;
+  font-size: 22px;
+  font-weight: bold;
+  transition: 0.5s;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transform: scaleY(1.5);
+    transition: 0.5s;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-radius: 4px;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $background-color_1;
+    transition: 0.5s;
+    transform: scale(0);
+    z-index: -1;
+  }
+  &:hover {
+    &:before {
+      transform: scaleY(1.2);
+      opacity: 1;
+    }
     &:after {
-		content: "";
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		background-color: $background-color_1;
-		transition: 0.5s;
-		transform: scale(0);
-		z-index: -1;
-	}
-	&:hover {
-
-		&:before {
-			transform: scaleY(1.2);
-			opacity: 1;
-		}
-		&:after {
-			transform: scale(1);
-            // z-index: 1;
-		}
-		color: $color_2;
-        z-index: 100;
-	}
-
+      transform: scale(1);
+      // z-index: 1;
+    }
+    color: $color_2;
+    z-index: 100;
+  }
 }
