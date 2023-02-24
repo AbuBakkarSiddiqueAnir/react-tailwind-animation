@@ -1,6 +1,8 @@
 
 import React from 'react';
-import './style.scss'
+import './style.css'
+
+
 type indexProps = {
 
 };
@@ -8,23 +10,23 @@ type indexProps = {
 const index: React.FC<indexProps> = () => {
 
     return (
-        <ul>
-            <li>
-                <a href="#">home</a>
-            </li>
-            <li>
-                <a href="#">about</a>
-            </li>
-            <li>
-                <a href="#">services</a>
-            </li>
-            <li>
-                <a href="#">team</a>
-            </li>
-            <li>
-                <a href="#">contact</a>
-            </li>
-        </ul>
+        <ul className="flex items-center">
+        <li>
+          <a href="#" className="nav-link">home</a>
+        </li>
+        <li>
+          <a href="#" className="nav-link">about</a>
+        </li>
+        <li>
+          <a href="#" className="nav-link">services</a>
+        </li>
+        <li>
+          <a href="#" className="nav-link">team</a>
+        </li>
+        <li>
+          <a href="#" className="nav-link">contact</a>
+        </li>
+      </ul>
     )
 }
 export default index;
