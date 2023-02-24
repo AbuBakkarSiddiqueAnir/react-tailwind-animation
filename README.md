@@ -21,7 +21,7 @@ import { Bounce } from 'react-tailwind-animation';
 
 function MyComponent() {
   return <Bounce>Hello, world!</Bounce>;
-}```
+}jsx```
 
 
 ## Contributing
