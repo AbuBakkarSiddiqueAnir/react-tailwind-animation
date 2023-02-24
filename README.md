@@ -16,13 +16,6 @@ Once you have completed these steps, you can start using React Tailwind Animatio
 
 React Tailwind Animation provides a set of pre-built animations that you can use in your project. To use an animation, you can import the animation component and use it in your code. For example, if you want to use the `bounce` animation, you can import the `Bounce` component and use it as follows:
 
-```jsx
-import { Bounce } from 'react-tailwind-animation';
-
-function MyComponent() {
-  return <Bounce>Hello, world!</Bounce>;
-}jsx```
-
 
 ## Contributing
 React Tailwind Animation is an open-source project and contributions are welcome. If you would like to contribute, you can follow these steps:
