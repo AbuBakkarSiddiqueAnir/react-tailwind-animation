@@ -1,13 +1,8 @@
 
-import React from 'react';
+import { ReactElement }  from 'react';
 import './style.css'
 
-
-type indexProps = {
-
-};
-
-const index: React.FC<indexProps> = () => {
+const index  = () : ReactElement => {
 
     return (
         <ul className="flex items-center">
@@ -30,3 +25,5 @@ const index: React.FC<indexProps> = () => {
     )
 }
 export default index;
+
+
